@@ -13,13 +13,13 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     if (name.value == "") {
-        swal("Error !", "Please enter a valid name", "error");
+        swal("Error !", "Harap masukan nama yang valid", "error");
     } else if (!isEmail(email.value)) {
-        swal("Error !", "Please enter a valid email", "error");
+        swal("Error !", "Harap masukan email yang valid", "error");
     } else if (courses.value == "") {
-        swal("Error !", "Please select a course", "error");
+        swal("Error !", "Silahkan pilih course", "error");
     } else {
-        swal("Welcome to Bigb", "Thanks for joining us !", "success");
+        swal("Welcome to Codecourse", "Terimakasih sudah memilih kami !", "success");
         form.reset();
     }
 
